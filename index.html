@@ -1,95 +1,182 @@
-
-Raw Blame
-     
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="descripton" content="My Coin It's The Best WebSite To Show You Bitcoin Price Try It !">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="bitcoin.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Overlock+SC&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-    <title>RoxG Coin</title>
+    <title>@RoxG Users Platform</title>
 </head>
 <body>
-    <div class="title-text">
-        <h1>My Coin</h1>
-        <hr>
-    </div>
-    <div class="card">
-        <div class="container">
-            <div class="live">
-                <img class="live-server" src="img/live.png">
-            </div>
-            <div class="btc-face">
-                <img class="wave" src="img/bitcoin.png">
-                <h1>BitCoin Price Now<br> <span id="price"></span>:<span id="currency"></span></h1>
-                <div class="toggles">
-                    <div class="page__toggle">
-                        <label class="toggle">
-                            <input class="toggle__input choose" type="radio" name="price" value='USD'>
-                            <span class="toggle__label">
-                            <span class="toggle__text">USD</span>
-                            </span>
-                        </label>
-                    </div>
-                    <div class="page__toggle">
-                        <label class="toggle">
-                            <input class="toggle__input choose" type="radio" name="price" value='EUR'>
-                            <span class="toggle__label">
-                            <span class="toggle__text">EUR</span>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <button id="btn">Check The Price</button>
+
+    <header>
+        <a href="#" class="logo">roxg</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Users</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="main">
+        <div>
+            <h3>RoxG Platform</h3>
+            <a href="#projects" class="main-btn">View available users</a>
+            <div class="social-icons">
+                <a href="https://t.me/jxxaid"><i class="fab fa-telegram"></i></a>
+                <a href="https://instagram.com/roxg"><i class="fab fa-instagram"></i></a>
+                <a href="https://discordapp.com/users/795473235240026142/"><i class="fab fa-discord"></i></a>
+                
             </div>
         </div>
-    </div>
-    <p class="dev">For Developers<a href="https://api.coindesk.com/v1/bpi/currentprice.json" target="blank"> <br> - api connection -</a></p>
-    <h1 class="made" > Powerd By : <a href="https://instagram.com/l7up" target="_blank" >l7up</a></h1>
+    </section>
 
-<!---- JavaScript ---->
-<script>
-    const btn = document.getElementById('btn');
-    const displayPrice = document.getElementById('price');
-    var currentCurrency = document.getElementById('currency');
-    const radiobtn = document.getElementsByClassName('choose');
-    var currency  = "";
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div class="info">
+                    <h3>Swap Service</h3>
+                    <p>RoxG, is trusted swapper with around 200+ swaps, more info on instagram or telegram</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <div class="info">
+                    <h3>Unban Service</h3>
+                    <p>RoxG, is trusted unbanner with over 300+ unbans, more info on insta or telegram</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3>Claim Service</h3>
+                    <p>RoxG, is also trusted claimer with almost 100 claims, more info on instagram or telegram</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    for (let i = 0; i < radiobtn.length; i++) {
-        radiobtn[i].addEventListener('click', function(){
-        currency = this.value;
-        currentCurrency.innerHTML = this.value;
-        })
-    }
-    btn.addEventListener('click', function() {
-        const XHR = new XMLHttpRequest();
+    <section class="projects" id="projects">
+        <h2 class="title">Users</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work1.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">@RoxG's Instagram User:</p>
+                    <strong class="project-title">
+                        <span>@3zcw</span>
+                        <a href="https://instagram.com/roxg" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work2.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">@RoxG's Instagram User:</p>
+                    <strong class="project-title">
+                        <span>@r216</span>
+                        <a href="https://instagram.com/roxg" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work3.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">@RoxG's Instagram User:</p>
+                    <strong class="project-title">
+                        <span>@qbhc</span>
+                        <a href="https://instagram.com/roxg" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work4.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">@RoxG's Instagram User:</p>
+                    <strong class="project-title">
+                        <span>@4zcv</span>
+                        <a href="https://instagram.com/roxg" class="more-details">More Details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work5.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">@RoxG's Instagram User:</p>
+                    <strong class="project-title">
+                        <span>@yxog</span>
+                        <a href="https://instagram.com/roxg" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/work6.jpg" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">@RoxG's Instagram User:</p>
+                    <strong class="project-title">
+                        <span>@28x5</span>
+                        <a href="https://instagram.com/roxg" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        XHR.onreadystatechange = function() {
-        if (XHR.readyState == 4 && XHR.status == 200) {
-            let price = JSON.parse(XHR.responseText).bpi[currency].rate;
-            displayPrice.innerHTML = price;
-        }
-        }
-        XHR.open('GET', 'https://api.coindesk.com/v1/bpi/currentprice.json');
-        XHR.send();
-    })
-</script>
-<script type="text/javascript" src="vanilla-tilt.js"></script>
-<script>
-    VanillaTilt.init(document.querySelectorAll(".wave"), {
-    max: 25,
-    speed: 400,
-    glare: true,
-    "max-glare": 1,
-});
-</script>
+    <section class="cards contact" id="contact">
+        <h2 class="title">Let's Work Together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+20122222222</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>business@l7up.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>l7up</span></p>
+        <div class="social-icons">
+            <a href="https://t.me/overexcited"><i class="fab fa-telegram"></i></a>
+            <a href="https://instagram.com/l7up"><i class="fab fa-instagram"></i></a>
+            <a href="https://discordapp.com/users/697398661788729356/"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/1p9"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
 </body>
 </html>
